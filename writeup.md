@@ -20,8 +20,27 @@ The goals / steps of this project are the following:
 * Data Preparation by Processing the collected data and augmenting it with additional data
 * Choose a pre-built model and train it on the prepared data
 * Test the model on track 1 using autonomous mode
+* Record the autonomous drive and prepare a video
 
+## Final Result
 
+The model was able to drive the car successfully on track 1 [See Test Result Video here](https://www.youtube.com/watch?v=cZ8XhD4_pKk)
+
+## Detailed explanation of the steps followed
+
+In this section, I will explain in detail how each of the steps mentioned in the overview are done
+
+### Data Collection
+
+The simulator provided by Udacity contains two modes Training mode and Autonomous mode. I have used the Training mode to collect the data by driving through the track and recording the driving data (images and driving log) in a detaination folder. This is the approach that I followed to collect the data based on the suggestions by the course instructor and from the discussions in Slack channel
+
+1. Two laps of center lane driving clockwise
+2. One lap of center lane driving counter clockwise to avoid left bias as the track has more left turns
+3. One lap of recovery driving by recording the recovery from left to center and right to center
+
+Following is a histogram of the steering angles after the data collection  
+
+![Steering angles Histogram](images/Steering_angle_hist_bfr_aug.png)
 
 [//]: # (Image References)
 
