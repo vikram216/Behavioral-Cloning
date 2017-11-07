@@ -40,7 +40,7 @@ The simulator provided by Udacity contains two modes Training mode and Autonomou
 
 Following is a histogram of the steering angles after the data collection  
 
-![Steering angles Histogram](images/Steering_angle_hist_bfr_aug.png)
+![Steering angles Histogram](Images/Steering_angle_hist_bfr_aug.png)
 
 [//]: # (Image References)
 
