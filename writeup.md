@@ -82,7 +82,8 @@ I have trained the model using 3, 5 and 7 epochs and found that the training and
 
 ### Model Testing
 
-The trained model has been saved using a file called model.h5 and it is used along with drive.py python program along with the simulator running in autonomous mode on track 1 to test the model. The model was able to successfully drive the car around the track and the result video can be seen [here](https://www.youtube.com/watch?v=cZ8XhD4_pKk)
+The trained model has been saved using a file called model.h5 and it is used along with drive.py python program along with the simulator running in autonomous mode on track 1 to test the model. The model was able to successfully drive the car around the track and the result video can be seen [here](https://www.youtube.com/watch?v=cZ8XhD4_pKk)  
+Video recording using video.py that shows the view from the camera image in the car can be seen in [run2.mp4](./run2.mp4) file in this repository
 
 ### Conclusion
 
