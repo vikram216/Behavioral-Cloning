@@ -1,19 +1,26 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 
-##Writeup Template
+## Project: Build a Behavioral Cloning Network
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+In this project I have used Deep Convolutional Neural Network to build a behavioral cloning network that will learn the behavior of a human driver in driving a car in a test track and eventually use this learning to autonomously drive the car.
+
+I have used the following to build this Network
+
+1. Python 3.5
+2. Keras
+3. OpenCV
+4. Numpy
 
 ---
 
-**Behavioral Cloning Project**
+## Overview of steps followed in completing this project
 
 The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
-* Train and validate the model with a training and validation set
-* Test that the model successfully drives around track one without leaving the road
-* Summarize the results with a written report
+* Data Collection using the Simulator provided by Udacity
+* Data Preparation by Processing the collected data and augmenting it with additional data
+* Choose a pre-built model and train it on the prepared data
+* Test the model on track 1 using autonomous mode
+
 
 
 [//]: # (Image References)
