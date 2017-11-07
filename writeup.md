@@ -42,6 +42,30 @@ Following is a histogram of the steering angles after the data collection
 
 ![Steering angles Histogram](Images/Steering_angle_hist_bfr_aug.png)
 
+### Data Processing
+
+Data processing is done to augment the training data with some more additional data so that the model can be generalized. The data processing is built into a generator to allow for real-time processing of the data. The advantage of using a generator is, we don't have to load all the data into memory at once and can be handled in batches. Hence the generator is run in parallel to the model for efficiency.
+
+I have used the following techniques to augment the training data
+
+1. Adding random shadow to the original camera images
+2. Adding random brightness to the originla camera images
+3. Flipping the original camera images
+
+Steering angle correction has been used for the left and right camera images. I have tried various correction angles between 0.1 to 0.25 and has settled with a steering correction of 0.17 which is working for my training data.
+
+In addition to the above steps I have also cropped the image to only include a region of interest and normalized the data so that it has zero mean and equal variance.
+
+Here is how the histogram of the steering anlgles after data processing
+
+![Steering angles Histogram](Images/Steering_angle_hist_aft_aug.png)
+
+As we can see from the histogram now that the probability of left and right steering angles is also boosted equally to straight steering 
+angle.
+
+
+
+
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
